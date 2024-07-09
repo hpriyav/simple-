@@ -1,0 +1,41 @@
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #d65151;
+    max-width: 400px;
+    background-color: teal;
+}
+body{
+    background-image: url("pixlr-image-generator-1860d06a-d2f3-4ebf-a51c-25dc402d4b8b.png");
+}
+
+input[type="submit"] {
+    padding: 11px 11px;
+    font-size: 18px;
+    background-color: #f9b219;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+label{
+color: aliceblue;
+}
+h2{
+    color: aliceblue;
+    text-align: center;
+}

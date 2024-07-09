@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    
+}
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    color: teal;
+}
+
+.content p {
+    line-height: 1.6;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content ul li strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.content ul li a {
+    color: teal;
+    text-decoration: none;
+}
+body {
+    
+    
+    background-image: linear-gradient(to left, rgba(141, 167, 66, 0), #f9b219)
+  }
+  
+  p{
+    font-family: "Arial", sans-serif;
+  }
+  .footer {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+h1{
+    color: aliceblue;
+    font-family: "Arial", sans-serif;
+}
+nav{
+    font-family: "Arial", sans-serif;
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+}
+
+.logo {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    width: 100px; 
+    height: auto;
+}

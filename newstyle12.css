@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #d65151;
+    max-width: 400px;
+    background-color: teal;
+}
+
+.container1 {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #d65151;
+    max-width: 400px;
+    background-color: teal;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: aliceblue;
+}
+
+
+input[type="text"]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="password"]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 15px 15px;
+    font-size: 18px;
+    background-color: #f9b219;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+.signup-btn {
+    padding: 15px 15px;
+    font-size: 18px;
+    background-color: #f9b219;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+body{
+    background-image: url('pixlr-image-generator-1860d06a-d2f3-4ebf-a51c-25dc402d4b8b.png');
+
+    
+    background-size: cover; 
+
+    
+    background-position: center; 
+    
+
+    
+    background-repeat: no-repeat; 
+}
+p{
+    color: aliceblue;
+}

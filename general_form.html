@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+
+</head>
+<body>
+    <h2>Kindly fill your details</h2>
+    <form method="post" class="formclass" action="slot_book.php"  >
+        <table>
+            <tr>
+                <td><label for="name">Name: <span style="color: red;">*</span></label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="sex">Sex: <span style="color: red;">*</span></label></td>
+                <td>
+                    <input type="radio" id="male" name="sex" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sex" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="age">Age: <span style="color: red;">*</span></label></td>
+                <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address: <span style="color: red;">*</span></label></td>
+                <td><input type="text" id="address" name="address" required></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number: <span style="color: red;">*</span></label></td>
+                <td><input type="number" id="mobile" name="mobile" required></td>
+            </tr>
+            <tr>
+                <td><label>Do you have any disability?</label></td>
+                <td>
+                    <input type="radio" id="disability_yes" name="disability" value="yes">
+                    <label for="disability_yes">Yes</label>
+                    <input type="radio" id="disability_no" name="disability" value="no">
+                    <label for="disability_no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="emergency_phno">Emergency Phone Number: <span style="color: red;">*</span></label></td>
+                <td><input type="number" id="emergency_phno" name="emergency_phno" required></td>
+            </tr>
+            <tr>
+                <td><label>Choose the specialist to consult: <span style="color: red;">*</span></label></td>
+                <td>
+                    <input type="radio" id="cardiologist" name="specialist" value="Cardiologist" required>
+                    <label for="cardiologist">Cardiologist</label><br>
+                    
+                    <input type="radio" id="dermatologist" name="specialist" value="Dermatologist" required>
+                    <label for="dermatologist">Dermatologist</label><br>
+                    
+                    <input type="radio" id="dentist" name="specialist" value="Dentist" required>
+                    <label for="dentist">Dentist</label><br>
+                    
+                    <input type="radio" id="gynaecologist" name="specialist" value="Gynaecologist" required>
+                    <label for="gynaecologist">Gynaecologist</label><br>
+                    
+                    <input type="radio" id="endocrinologist" name="specialist" value="Endocrinologist" required>
+                    <label for="endocrinologist">Endocrinologist</label><br>
+                    
+                    <input type="radio" id="general" name="specialist" value="General" required>
+                    <label for="general">General</label><br>
+                    
+                    <input type="radio" id="pediatrician" name="specialist" value="Pediatrician" required>
+                    <label for="pediatrician">Pediatrician</label><br>
+                    
+                    <input type="radio" id="neurologist" name="specialist" value="Neurologist" required>
+                    <label for="neurologist">Neurologist</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="issue">Describe your issue (optional):</label></td>
+                <td><textarea id="issue" name="issue" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Are you sure to book slot? <span style="color: red;">*</span></label></td>
+                <td>
+                    <input type="radio" id="yes" name="book_slot" value="yes" required>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="book_slot" value="no" required>
+                    <label for="no">No</label>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" onclick="fun()">
+    </form>
+    <script>
+        function fun(){
+        var mobileInput = document.getElementById("mobile");
+        var emergencyInput = document.getElementById("emergency_phno");
+
+        var mobileNumber = mobileInput.value;
+    var emergencyNumber = emergencyInput.value;
+
+    if (mobileNumber.trim() === "" || emergencyNumber.trim() === "") {
+        alert("Please enter both mobile number and emergency number.");
+        return false;
+    }
+
+    // Check if mobile number and emergency number have 10 digits
+    if (mobileNumber.length !== 10 || emergencyNumber.length !== 10) {
+        alert("Mobile number and emergency number should have 10 digits.");
+        return false;
+    }
+
+    // Check if mobile number and emergency number are same
+    if (mobileNumber === emergencyNumber) {
+        alert("Mobile number and emergency number should not be the same.");
+        return false;
+    }
+}
+    </script>
+</body>
+</html>
